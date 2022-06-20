@@ -1,0 +1,237 @@
+[2022-06-15 14:15:46,288: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-06-15 14:15:46,314: INFO/MainProcess] mingle: searching for neighbors
+[2022-06-15 14:15:47,342: INFO/MainProcess] mingle: all alone
+[2022-06-15 14:15:47,373: INFO/MainProcess] celery@1d7a6b68b43b ready.
+[2022-06-15 14:15:47,437: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-06-15 14:17:26,603: INFO/MainProcess] Received task: create_task[580a78c3-b6bc-4f36-80d1-5dc4e051d215]  
+[2022-06-15 14:17:36,774: INFO/ForkPoolWorker-1] Task create_task[580a78c3-b6bc-4f36-80d1-5dc4e051d215] succeeded in 10.095490128999984s: True
+[2022-06-15 14:30:06,160: INFO/MainProcess] Received task: create_task[d3ac5384-5399-42b0-8732-fe6cda26c6ca]  
+[2022-06-15 14:30:06,408: INFO/ForkPoolWorker-1] Task create_task[d3ac5384-5399-42b0-8732-fe6cda26c6ca] succeeded in 0.008726040999817997s: True
+[2022-06-15 15:36:42,947: INFO/MainProcess] Received task: create_task[b2180028-97cc-4ce2-8601-587da6f445dd]  
+[2022-06-15 15:36:42,986: INFO/MainProcess] Received task: create_task[b5ffd9ac-edb7-4eae-931c-d2c35ef00ab3]  
+[2022-06-15 15:36:48,161: ERROR/ForkPoolWorker-3] Task create_task[b5ffd9ac-edb7-4eae-931c-d2c35ef00ab3] raised unexpected: ValueError("invalid literal for int() with base 10: 'testing the int'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 14, in create_task
+    time.sleep(int(task_type) * 10)
+ValueError: invalid literal for int() with base 10: 'testing the int'
+[2022-06-15 15:36:53,079: INFO/ForkPoolWorker-1] Task create_task[b2180028-97cc-4ce2-8601-587da6f445dd] succeeded in 10.042598504000125s: True
+[2022-06-15 15:38:09,632: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-06-15 15:38:09,655: INFO/MainProcess] mingle: searching for neighbors
+[2022-06-15 15:38:10,692: INFO/MainProcess] mingle: all alone
+[2022-06-15 15:38:10,730: INFO/MainProcess] celery@72aabe576948 ready.
+[2022-06-15 15:38:14,627: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-06-15 15:38:56,949: INFO/MainProcess] Received task: create_task[cc9f5520-6ecc-4e87-ac14-8438756f15a1]  
+[2022-06-15 15:38:56,976: INFO/MainProcess] Received task: create_task[7903eae3-f764-44de-89e0-7a8a7b0eaf2d]  
+[2022-06-15 15:38:57,054: ERROR/ForkPoolWorker-3] Task create_task[7903eae3-f764-44de-89e0-7a8a7b0eaf2d] raised unexpected: ValueError("invalid literal for int() with base 10: 'testing the int'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 14, in create_task
+    time.sleep(int(task_type) * 10)
+ValueError: invalid literal for int() with base 10: 'testing the int'
+[2022-06-15 15:39:07,091: INFO/ForkPoolWorker-1] Task create_task[cc9f5520-6ecc-4e87-ac14-8438756f15a1] succeeded in 10.053291379000257s: True
+[2022-06-15 15:39:54,102: INFO/MainProcess] Received task: create_task[848352e2-5fd5-4728-b45d-efbd55939de4]  
+[2022-06-15 15:39:54,121: INFO/MainProcess] Received task: create_task[08b976e7-8d8e-407e-a3df-6cc3a16c76fd]  
+[2022-06-15 15:39:54,141: ERROR/ForkPoolWorker-3] Task create_task[08b976e7-8d8e-407e-a3df-6cc3a16c76fd] raised unexpected: ValueError("invalid literal for int() with base 10: 'testing the int'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 14, in create_task
+    time.sleep(int(task_type) * 10)
+ValueError: invalid literal for int() with base 10: 'testing the int'
+[2022-06-15 15:40:04,162: INFO/ForkPoolWorker-1] Task create_task[848352e2-5fd5-4728-b45d-efbd55939de4] succeeded in 10.027668337999785s: True
+[2022-06-15 15:40:27,059: INFO/MainProcess] Received task: create_task[ed1878da-a480-4ce2-a562-e9ccced6d9e5]  
+[2022-06-15 15:40:27,069: INFO/MainProcess] Received task: create_task[d8ead2ef-3e42-4c81-b11b-cc22c38db035]  
+[2022-06-15 15:40:27,080: ERROR/ForkPoolWorker-3] Task create_task[d8ead2ef-3e42-4c81-b11b-cc22c38db035] raised unexpected: ValueError("invalid literal for int() with base 10: 'testing the int'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 14, in create_task
+    time.sleep(int(task_type) * 10)
+ValueError: invalid literal for int() with base 10: 'testing the int'
+[2022-06-15 15:40:37,099: INFO/ForkPoolWorker-1] Task create_task[ed1878da-a480-4ce2-a562-e9ccced6d9e5] succeeded in 10.023025587999655s: True
+[2022-06-15 15:40:43,249: INFO/MainProcess] Received task: create_task[3b08ab53-7c64-4631-8ef2-fec4f0172183]  
+[2022-06-15 15:40:43,268: INFO/MainProcess] Received task: create_task[9f161230-c541-4682-90ad-4a09bbca7a5c]  
+[2022-06-15 15:40:43,283: ERROR/ForkPoolWorker-3] Task create_task[9f161230-c541-4682-90ad-4a09bbca7a5c] raised unexpected: ValueError("invalid literal for int() with base 10: 'testing the int'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 14, in create_task
+    time.sleep(int(task_type) * 10)
+ValueError: invalid literal for int() with base 10: 'testing the int'
+[2022-06-15 15:40:53,304: INFO/ForkPoolWorker-1] Task create_task[3b08ab53-7c64-4631-8ef2-fec4f0172183] succeeded in 10.029973378999784s: True
+[2022-06-15 15:42:24,532: INFO/MainProcess] Received task: create_task[acac5cdc-2fd4-4c6a-ac6f-5eda3a15ddae]  
+[2022-06-15 15:42:24,554: INFO/MainProcess] Received task: create_task[5743c54f-29cf-409f-9418-904b20a115ea]  
+[2022-06-15 15:42:24,577: ERROR/ForkPoolWorker-3] Task create_task[5743c54f-29cf-409f-9418-904b20a115ea] raised unexpected: ValueError("invalid literal for int() with base 10: 'testing the int'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 412, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/celery/app/trace.py", line 704, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/usr/src/app/worker.py", line 14, in create_task
+    time.sleep(int(task_type) * 10)
+ValueError: invalid literal for int() with base 10: 'testing the int'
+[2022-06-15 15:42:34,600: INFO/ForkPoolWorker-1] Task create_task[acac5cdc-2fd4-4c6a-ac6f-5eda3a15ddae] succeeded in 10.027638296999612s: True
+[2022-06-15 15:44:26,843: INFO/MainProcess] Received task: create_task[a5b6fc02-dd9e-4f84-b452-e07d8cbfa223]  
+[2022-06-15 15:44:26,865: ERROR/MainProcess] Received unregistered task of type 'test_celery'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[["testing the int"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (94b)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py", line 562, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'test_celery'
+[2022-06-15 15:44:36,946: INFO/ForkPoolWorker-1] Task create_task[a5b6fc02-dd9e-4f84-b452-e07d8cbfa223] succeeded in 10.036076962999687s: True
+[2022-06-15 15:45:39,764: INFO/MainProcess] Received task: create_task[9c24f379-2931-40eb-aa77-9624a18b6138]  
+[2022-06-15 15:45:39,789: ERROR/MainProcess] Received unregistered task of type 'test_celery'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[["testing the int"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (94b)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py", line 562, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'test_celery'
+[2022-06-15 15:45:49,838: INFO/ForkPoolWorker-1] Task create_task[9c24f379-2931-40eb-aa77-9624a18b6138] succeeded in 10.035915961999308s: True
+[2022-06-15 15:46:32,078: INFO/MainProcess] Received task: create_task[7b3132aa-0380-4294-b8d5-bf56c2cad488]  
+[2022-06-15 15:46:32,095: ERROR/MainProcess] Received unregistered task of type 'test_celery'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[["testing the int"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (94b)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py", line 562, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'test_celery'
+[2022-06-15 15:46:42,136: INFO/ForkPoolWorker-1] Task create_task[7b3132aa-0380-4294-b8d5-bf56c2cad488] succeeded in 10.025073087999772s: True
+[2022-06-15 15:47:57,162: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-06-15 15:47:57,193: INFO/MainProcess] mingle: searching for neighbors
+[2022-06-15 15:47:58,244: INFO/MainProcess] mingle: all alone
+[2022-06-15 15:47:58,304: INFO/MainProcess] celery@72aabe576948 ready.
+[2022-06-15 15:48:02,197: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-06-15 15:48:14,728: INFO/MainProcess] Received task: create_task[18449aba-f6fd-462c-aa68-337077865404]  
+[2022-06-15 15:48:14,755: INFO/MainProcess] Received task: test_celery[dd54ae0b-0778-4541-97a4-c25c7093767d]  
+[2022-06-15 15:48:19,807: INFO/ForkPoolWorker-3] Task test_celery[dd54ae0b-0778-4541-97a4-c25c7093767d] succeeded in 5.037012125999354s: True
+[2022-06-15 15:48:24,807: INFO/ForkPoolWorker-1] Task create_task[18449aba-f6fd-462c-aa68-337077865404] succeeded in 10.040820961999998s: True
+[2022-06-15 15:51:24,128: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-06-15 15:51:24,149: INFO/MainProcess] mingle: searching for neighbors
+[2022-06-15 15:51:25,179: INFO/MainProcess] mingle: all alone
+[2022-06-15 15:51:25,212: INFO/MainProcess] celery@72aabe576948 ready.
+[2022-06-15 15:51:25,249: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-06-15 15:51:31,008: INFO/MainProcess] Received task: create_task[35db6142-80bc-4cf7-af59-322978a10225]  
+[2022-06-15 15:51:31,025: ERROR/MainProcess] Received unregistered task of type 'lendigo'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[["testing the int"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (94b)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py", line 562, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'lendigo'
+[2022-06-15 15:51:31,038: INFO/MainProcess] Received task: test_celery[108014b5-1413-4d0d-8aec-b4dc083147b6]  
+[2022-06-15 15:51:36,094: INFO/ForkPoolWorker-3] Task test_celery[108014b5-1413-4d0d-8aec-b4dc083147b6] succeeded in 5.041274002999671s: True
+[2022-06-15 15:51:41,080: INFO/ForkPoolWorker-1] Task create_task[35db6142-80bc-4cf7-af59-322978a10225] succeeded in 10.040366047000134s: True
+[2022-06-15 15:52:52,931: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-06-15 15:52:57,980: INFO/MainProcess] mingle: searching for neighbors
+[2022-06-15 15:52:59,028: INFO/MainProcess] mingle: all alone
+[2022-06-15 15:52:59,064: INFO/MainProcess] celery@72aabe576948 ready.
+[2022-06-15 15:53:02,963: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-06-15 15:53:08,929: INFO/MainProcess] Received task: create_task[6c5f8589-6260-42ad-9fe5-645f941a783d]  
+[2022-06-15 15:53:08,940: ERROR/MainProcess] Received unregistered task of type 'lendigo'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[["testing the int"], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (94b)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/celery/worker/consumer/consumer.py", line 562, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'lendigo'
+[2022-06-15 15:53:08,956: INFO/MainProcess] Received task: test_celery[44cd4a90-797d-4462-8eeb-10db33c9a559]  
+[2022-06-15 15:53:08,978: INFO/ForkPoolWorker-3] Task test_celery[44cd4a90-797d-4462-8eeb-10db33c9a559] succeeded in 0.008653500000036729s: True
+[2022-06-15 15:53:18,998: INFO/ForkPoolWorker-1] Task create_task[6c5f8589-6260-42ad-9fe5-645f941a783d] succeeded in 10.042555836999782s: True
+[2022-06-15 15:55:09,437: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-06-15 15:55:09,469: INFO/MainProcess] mingle: searching for neighbors
+[2022-06-15 15:55:10,515: INFO/MainProcess] mingle: all alone
+[2022-06-15 15:55:10,549: INFO/MainProcess] celery@72aabe576948 ready.
+[2022-06-15 15:55:14,533: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-06-15 15:56:08,002: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-06-15 15:56:13,038: INFO/MainProcess] mingle: searching for neighbors
+[2022-06-15 15:56:14,151: INFO/MainProcess] mingle: all alone
+[2022-06-15 15:56:14,215: INFO/MainProcess] celery@72aabe576948 ready.
+[2022-06-15 15:56:14,260: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-06-15 16:05:28,864: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-06-15 16:05:28,895: INFO/MainProcess] mingle: searching for neighbors
+[2022-06-15 16:05:29,928: INFO/MainProcess] mingle: all alone
+[2022-06-15 16:05:29,972: INFO/MainProcess] celery@72aabe576948 ready.
+[2022-06-15 16:05:33,882: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-06-15 16:59:45,146: INFO/MainProcess] Received task: create_task[f47c455f-20a1-4b83-85b9-efd3c813e763]  
+[2022-06-15 16:59:45,527: INFO/MainProcess] Received task: lendigo[f3d86b05-f45e-4f47-9726-33246672906e]  
+[2022-06-15 16:59:45,539: INFO/MainProcess] Received task: test_celery[7e79bcfb-d3db-4da8-b6f7-37569e18bf05]  
+[2022-06-15 16:59:50,713: INFO/ForkPoolWorker-2] Task test_celery[7e79bcfb-d3db-4da8-b6f7-37569e18bf05] succeeded in 5.104238627998711s: True
+[2022-06-15 16:59:55,710: INFO/ForkPoolWorker-3] Task lendigo[f3d86b05-f45e-4f47-9726-33246672906e] succeeded in 10.132444670998666s: 'test task return testing the int'
+[2022-06-15 16:59:55,711: INFO/ForkPoolWorker-1] Task create_task[f47c455f-20a1-4b83-85b9-efd3c813e763] succeeded in 10.12478487899898s: True
+[2022-06-15 17:02:56,808: INFO/MainProcess] Received task: create_task[c2932c49-23de-427c-a228-9aa47c979cec]  
+[2022-06-15 17:02:56,844: INFO/MainProcess] Received task: lendigo[4bc6bee0-05ca-4f08-82d3-e7a1c3dfd168]  
+[2022-06-15 17:02:56,855: INFO/MainProcess] Received task: test_celery[7d87e11e-6b0c-4e34-8dbc-62730e768307]  
+[2022-06-15 17:02:56,880: INFO/ForkPoolWorker-2] Task test_celery[7d87e11e-6b0c-4e34-8dbc-62730e768307] succeeded in 0.005548166000153287s: True
+[2022-06-15 17:03:06,899: INFO/ForkPoolWorker-1] Task create_task[c2932c49-23de-427c-a228-9aa47c979cec] succeeded in 10.035956005000116s: True
+[2022-06-15 17:03:06,973: INFO/ForkPoolWorker-3] Task lendigo[4bc6bee0-05ca-4f08-82d3-e7a1c3dfd168] succeeded in 10.109787504999986s: 'test task return testing the int'
+[2022-06-16 14:06:13,755: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-06-16 14:06:13,775: INFO/MainProcess] mingle: searching for neighbors
+[2022-06-16 14:06:19,854: INFO/MainProcess] mingle: all alone
+[2022-06-16 14:06:19,897: INFO/MainProcess] celery@72aabe576948 ready.
+[2022-06-16 14:06:19,913: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-06-16 14:08:58,946: INFO/MainProcess] Received task: create_task[c70cdb70-04a3-4cb3-871a-2c69bf8dc725]  
+[2022-06-16 14:08:58,969: INFO/MainProcess] Received task: lendigo[64cfc48f-7a0f-42dd-befb-bf73ebd6467f]  
+[2022-06-16 14:08:58,978: INFO/MainProcess] Received task: test_celery[49306b30-0f9f-4f6d-af11-1ec40ba948e3]  
+[2022-06-16 14:08:59,019: INFO/ForkPoolWorker-2] Task test_celery[49306b30-0f9f-4f6d-af11-1ec40ba948e3] succeeded in 0.016877750000276137s: True
+[2022-06-16 14:09:09,105: INFO/ForkPoolWorker-3] Task lendigo[64cfc48f-7a0f-42dd-befb-bf73ebd6467f] succeeded in 10.106815005005046s: 'test task return testing the int'
+[2022-06-16 14:09:14,100: INFO/ForkPoolWorker-1] Task create_task[c70cdb70-04a3-4cb3-871a-2c69bf8dc725] succeeded in 15.097703382998588s: True
